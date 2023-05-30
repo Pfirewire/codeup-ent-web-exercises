@@ -23,22 +23,22 @@ const wordArray = [
     'television'
 ];
 
-function sortAToZ(array) {
+const sortAToZ = array => {
     const sortedArray = [...array];
     return sortedArray.sort((a, b) => a.localeCompare(b));
 }
 
-function sortZToA(array) {
+const sortZToA = array => {
     const sortedArray = [...array];
     return sortedArray.sort((a, b) => b.localeCompare(a));
 }
 
-function sortShortToLong(array) {
+const sortShortToLong = array => {
     const sortedArray = [...array];
     return sortedArray.sort((a, b) => a.length - b.length);
 }
 
-function sortLongToShort(array) {
+const sortLongToShort = array => {
     const sortedArray = [...array];
     return sortedArray.sort((a, b) => b.length - a.length);
 }
